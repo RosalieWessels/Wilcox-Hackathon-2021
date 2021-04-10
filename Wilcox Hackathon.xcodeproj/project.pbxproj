@@ -23,7 +23,7 @@
 		11FB80982621410A0051404B /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB80972621410A0051404B /* FormView.swift */; };
 		11FB80A0262141210051404B /* JoinGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB809F262141210051404B /* JoinGroupView.swift */; };
 		11FB80A52621425D0051404B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11FB80A42621425D0051404B /* GoogleService-Info.plist */; };
-		11FB80FC262187FC0051404B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB80FB262187FC0051404B /* ChatView.swift */; };
+		11FB80FC262187FC0051404B /* ChatroomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB80FB262187FC0051404B /* ChatroomsViewModel.swift */; };
 		11FB8101262188090051404B /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB8100262188090051404B /* CallView.swift */; };
 		295E7174DCD8A888B15A1E12 /* Pods_Wilcox_Hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E149E5D030BD68B51A484572 /* Pods_Wilcox_Hackathon.framework */; };
 		A2025B2F086B176C7C261297 /* Pods_Wilcox_HackathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1B4D701ECE7CF640AA6965 /* Pods_Wilcox_HackathonTests.framework */; };
@@ -69,7 +69,7 @@
 		11FB80972621410A0051404B /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		11FB809F262141210051404B /* JoinGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGroupView.swift; sourceTree = "<group>"; };
 		11FB80A42621425D0051404B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		11FB80FB262187FC0051404B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		11FB80FB262187FC0051404B /* ChatroomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomsViewModel.swift; sourceTree = "<group>"; };
 		11FB8100262188090051404B /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
 		239ED3F2C6A5F6EC4993E29A /* Pods-Wilcox HackathonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wilcox HackathonTests.debug.xcconfig"; path = "Target Support Files/Pods-Wilcox HackathonTests/Pods-Wilcox HackathonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4A118D154A1FEAFC6E3E2A1D /* Pods-Wilcox Hackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wilcox Hackathon.release.xcconfig"; path = "Target Support Files/Pods-Wilcox Hackathon/Pods-Wilcox Hackathon.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 				11FB8092262140E50051404B /* SignUpScreen.swift */,
 				11FB80972621410A0051404B /* FormView.swift */,
 				11FB8088262140A90051404B /* MainView.swift */,
-				11FB80FB262187FC0051404B /* ChatView.swift */,
+				11FB80FB262187FC0051404B /* ChatroomsViewModel.swift */,
 				1183BEA12622392800F1209F /* MessagesView.swift */,
 				11FB8100262188090051404B /* CallView.swift */,
 				1183BEA9262246CE00F1209F /* CreateNewGroupView.swift */,
@@ -447,7 +447,7 @@
 				11FB805D262137480051404B /* ContentView.swift in Sources */,
 				11FB8101262188090051404B /* CallView.swift in Sources */,
 				11FB808E262140DC0051404B /* LogInScreen.swift in Sources */,
-				11FB80FC262187FC0051404B /* ChatView.swift in Sources */,
+				11FB80FC262187FC0051404B /* ChatroomsViewModel.swift in Sources */,
 				1183BEA22622392800F1209F /* MessagesView.swift in Sources */,
 				11FB80A0262141210051404B /* JoinGroupView.swift in Sources */,
 				1183BEAA262246CE00F1209F /* CreateNewGroupView.swift in Sources */,

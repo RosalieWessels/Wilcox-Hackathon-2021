@@ -9,32 +9,6 @@ import SwiftUI
 import Foundation
 import Firebase
 
-struct ChatView: View {
-    @ObservedObject var viewModel = ChatroomsViewModel()
-    
-    init() {
-        viewModel.fetchData()
-    }
-    
-    var body: some View {
-        List(viewModel.chatrooms) { chatroom in
-            NavigationLink (destination: MessagesView(chatroom: chatroom)){
-                HStack {
-                    Text(chatroom.title)
-                    Spacer()
-                }
-                
-            }
-        }
-    }
-}
-
-struct ChatView_Previews: PreviewProvider {
-    static var previews: some View {
-        ChatView()
-    }
-}
-
 struct Chatroom: Codable, Identifiable {
     var id: String
     var title: String

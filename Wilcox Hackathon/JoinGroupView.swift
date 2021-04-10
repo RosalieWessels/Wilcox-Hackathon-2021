@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
+import Firebase
 
 struct JoinGroupView: View {
-    
+    @State var db = Firestore.firestore()
     @State var groupCode: String = ""
+    @State var user = Auth.auth().currentUser
     @ObservedObject var viewModel = ChatroomsViewModel()
     @Environment(\.presentationMode) var presentation
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
+    @State var showAlert = false
+    @State var titleNews = "Good News"
+    @State var descriptionNews = "You were succesfully added to the group!"
     
     var body: some View {
         ZStack {
@@ -74,13 +82,75 @@ struct JoinGroupView: View {
                 
                 Spacer()
             }
+            .alert(isPresented: $showAlert, content: {
+                Alert(title: Text(titleNews), message: Text(descriptionNews), dismissButton: Alert.Button.default(
+                    Text("Ok"), action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }
+                ))
+            })
         }
     }
     
     func joinGroup() {
-        viewModel.joinChatroom(code: groupCode, handler: {
-            self.presentation.wrappedValue.dismiss()
-        })
+        print("lets join!")
+        if (user != nil) {
+            //Add user to group in database
+            db.collection("groups").whereField("id", isEqualTo: groupCode)
+                .getDocuments() { (querySnapshot, err) in
+                    if let err = err {
+                        print("Error getting documents: \(err)")
+                    } else {
+                        for document in querySnapshot!.documents {
+                            print("\(document.documentID) => \(document.data())")
+                            
+                            let groupsDatabaseID = document.documentID
+                            if let groupName = document.get("name") as? String {
+                                db.collection("groups").document(document.documentID).updateData([
+                                    "members": FieldValue.arrayUnion([self.user!.email])
+                                ])
+                                
+                                viewModel.joinChatroom(code: groupCode, handler: {
+                                    self.presentation.wrappedValue.dismiss()
+                                })
+                                
+                                //add user to chatroom
+                                let docRef = db.collection("chatrooms").document(groupsDatabaseID)
+
+                                docRef.getDocument { (document, error) in
+                                    if let document = document, document.exists {
+                                        let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+                                        print("Document data: \(dataDescription)")
+                                        
+                                        db.collection("chatrooms").document(groupsDatabaseID).updateData([
+                                            "users": FieldValue.arrayUnion([self.user!.email])
+                                        ])
+                                        
+                                        showAlert = true
+                                        
+                                    } else {
+                                        print("Document does not exist")
+                                        
+                                        db.collection("chatrooms").document(groupsDatabaseID).setData([
+                                            "joinCode": Int.random(in: 1111...9999),
+                                            "title": groupName,
+                                            "users": [user!.email]
+                                        ]) { err in
+                                            if let err = err {
+                                                print("Error writing document: \(err)")
+                                            } else {
+                                                print("Document successfully written!")
+                                                showAlert = true
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+        
     }
 }
 

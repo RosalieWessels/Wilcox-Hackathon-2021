@@ -45,6 +45,7 @@ struct MessagesView: View {
                     Text("Send")
                 })
             }
+            .padding(.horizontal)
         }
             .navigationBarTitle(chatroom.title)
             .navigationBarHidden(false)

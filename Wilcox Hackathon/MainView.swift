@@ -13,9 +13,11 @@ struct MainView: View {
     @StateObject var model = ModelData()
     @ObservedObject var viewModel = ChatroomsViewModel()
     
+    //@State var lengthOfMyClassesArray = 0
     @State var myClasses = []
     @State var myDocIDs = []
     @State var dict = [String: String]()
+    
     
     init() {
         viewModel.fetchData()
@@ -57,15 +59,11 @@ struct MainView: View {
                         .padding(5)
                     
                     VStack {
-                        if myClasses.count != 0 {
-                            ForEach(0..<myClasses.count) { index in
-                                GroupBox(groupName: myClasses[index] as! String, groupId: myDocIDs[index] as! String, viewModel: viewModel)
-                                    .padding()
-                                
+                        ForEach(myClasses.indices, id: \.self) { index in
+                            GroupBox(groupName: myClasses[index] as! String, groupId: myDocIDs[index] as! String, viewModel: viewModel)
+                                .padding()
                             }
                         }
-                        
-                    }
                 }
                 .background(Color.white)
                 .cornerRadius(25)
@@ -102,6 +100,7 @@ struct MainView: View {
     }
     
     func myGroups() {
+        myClasses = []
         db.collection("groups").whereField("members", arrayContains: "\(Auth.auth().currentUser?.email ?? "")")
             .getDocuments() { (querySnapshot, err) in
                 if let err = err {
