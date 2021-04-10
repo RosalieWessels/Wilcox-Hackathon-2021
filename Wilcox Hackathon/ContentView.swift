@@ -11,35 +11,50 @@ import Firebase
 struct ContentView: View {
     
     @State var db = Firestore.firestore()
+    @AppStorage("log_Status") var status = DefaultStatus.status
+    @StateObject var model = ModelData()
     
     var body: some View {
         NavigationView {
             ZStack {
-                
-                Text("Welcome.")
-                    .font(Font.custom("ArialRoundedMTBold", size: 40))
-                    .foregroundColor(.white)
-                
-                VStack {
-                    Spacer()
-                    
-                      HStack {
-                        NavigationLink(destination: SignUpScreen()) {
-                            LogInOrSignUpText(text: "Sign Up")
-                        }
+                if status == true {
+                    VStack {
+                        Text("Logged in as \(Auth.auth().currentUser?.email ?? "")")
                         
-                        NavigationLink(destination: LogInScreen()) {
-                            LogInOrSignUpText(text: "Log In")
+                        
+                        Button(action: model.logOut) {
+                            Text("Log out")
+                        }
+                    }
+
+                }
+                else {
+                    ZStack {
+                        
+                        Text("Welcome.")
+                            .font(Font.custom("ArialRoundedMTBold", size: 40))
+                            .foregroundColor(.white)
+                        
+                        VStack {
+                            Spacer()
+                            
+                              HStack {
+                                
+                                NavigationLink(destination: FullLoginView()) {
+                                    LogInOrSignUpText(text: "Log In")
+                                }
+                                
+                            }
+                              .padding(.horizontal, 10)
+                            
                         }
                         
                     }
-                      .padding(.horizontal, 10)
-                    
+                    .background(Image("wallpaper"))
+                    .navigationBarHidden(true)
                 }
-                
             }
-            .background(Image("wallpaper"))
-            .navigationBarHidden(true)
+            
         }
     }
     
