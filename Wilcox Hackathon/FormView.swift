@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct FormView: View {
+    @State var classes: String = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        question(label: "Classes", placeholder: "What classes are you taking")
+    }
+}
+
+struct question: View {
+    @State var label: String
+    @State var placeholder: String
+    @State var answer: String = ""
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text(label).font(.headline)
+            TextField(placeholder, text: $answer)
+                .padding(.all)
+                .cornerRadius(5)
+                .border(Color(UIColor.separator))
+        }
+        .padding(.horizontal, 15)
     }
 }
 
