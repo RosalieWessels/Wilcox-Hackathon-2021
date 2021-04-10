@@ -11,34 +11,58 @@ struct MainView: View {
     var body: some View {
         ZStack {
             
-            Image("studyBackground") // photo credit: https://www.lsprints.co.uk/ekmps/shops/lsprints/images/stock-designs-polka-dots-baby-blue-white-38270-p.jpg
+            Image("studyBackground").navigationBarHidden(true) // photo credit: https://www.lsprints.co.uk/ekmps/shops/lsprints/images/stock-designs-polka-dots-baby-blue-white-38270-p.jpg
+            
             
             VStack {
+                Spacer()
+                
                 VStack {
                     Text("Welcome to")
                         .font(.system(size: 35))
                         .foregroundColor(.white)
                         .shadow(radius:3)
-                    Text("TBD")
+                    Text("Class Chats")
                         .font(.system(size: 50))
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.white)
                         .shadow(radius:3)
                 }
                 
-                ZStack {
-                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(.white)
-                        .frame(width:300, height:100)
-                        .shadow(radius:3)
+                Spacer()
+                
+                VStack {
+                    Text("Your Groups:")
+                        .fontWeight(.heavy)
+                        .padding(5)
                     
-                    VStack {
-                        Text("Your Groups:")
-                            .fontWeight(.heavy)
-                        
-                        GroupBox(groupName: "Chem", groupChat: "chatLink", groupCall: "callLink")
-                    }
+                    GroupBox(groupName: "Chemistry")
+                        .padding()
+                    GroupBox(groupName: "AP World History")
+                        .padding()
+                    GroupBox(groupName: "AP CSP")
+                        .padding()
                 }
+                .background(Color.white)
+                .cornerRadius(25)
+                .shadow(radius:3)
+                
+                Spacer()
+                
+                HStack {
+                    Image(systemName: "person.fill").foregroundColor(Color.black).padding(.leading)
+                    Text("dabomb.com.yourmom").multilineTextAlignment(.leading).foregroundColor(Color.black)
+                    NavigationLink(destination: JoinGroupView()) {
+                        Image(systemName: "plus.circle.fill").foregroundColor(Color.black)
+                        Text("find group").foregroundColor(Color.black)
+                    }
+                    .padding()
+                }
+                .background(Color.white)
+                .cornerRadius(25)
+                .shadow(radius:3)
+                
+                Spacer()
             }
             
         }
@@ -47,13 +71,22 @@ struct MainView: View {
 
 struct GroupBox: View {
     @State var groupName: String
-    @State var groupChat: String
-    @State var groupCall: String
     var body: some View {
         HStack {
-            Text(groupName).fontWeight(.heavy).multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+            Text(groupName).fontWeight(.heavy)
             
             HStack {
+                NavigationLink(destination: ContentView()) {
+                    Image(systemName: "bubble.right.fill").foregroundColor(Color.black)
+                    Text("chat").foregroundColor(Color.black)
+                }
+            }
+            
+            HStack {
+                NavigationLink(destination: ContentView()) {
+                    Image(systemName: "phone.fill").foregroundColor(Color.black)
+                    Text("call").foregroundColor(Color.black)
+                }
             }
         }
     }
