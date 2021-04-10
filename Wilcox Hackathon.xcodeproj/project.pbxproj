@@ -10,6 +10,7 @@
 		0D945E177467A32821B103DC /* Pods_Wilcox_Hackathon_Wilcox_HackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8CD3DEC3A595EC5038E7343 /* Pods_Wilcox_Hackathon_Wilcox_HackathonUITests.framework */; };
 		1183BE9D2622376000F1209F /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1183BE9C2622376000F1209F /* MessagesViewModel.swift */; };
 		1183BEA22622392800F1209F /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1183BEA12622392800F1209F /* MessagesView.swift */; };
+		1183BEAA262246CE00F1209F /* CreateNewGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1183BEA9262246CE00F1209F /* CreateNewGroupView.swift */; };
 		11FB805B262137480051404B /* Wilcox_HackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB805A262137480051404B /* Wilcox_HackathonApp.swift */; };
 		11FB805D262137480051404B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB805C262137480051404B /* ContentView.swift */; };
 		11FB805F262137480051404B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FB805E262137480051404B /* Assets.xcassets */; };
@@ -25,7 +26,6 @@
 		11FB80FC262187FC0051404B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB80FB262187FC0051404B /* ChatView.swift */; };
 		11FB8101262188090051404B /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB8100262188090051404B /* CallView.swift */; };
 		295E7174DCD8A888B15A1E12 /* Pods_Wilcox_Hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E149E5D030BD68B51A484572 /* Pods_Wilcox_Hackathon.framework */; };
-		42C56CD8262235B000B03FBF /* CreateGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C56CD7262235B000B03FBF /* CreateGroupView.swift */; };
 		A2025B2F086B176C7C261297 /* Pods_Wilcox_HackathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1B4D701ECE7CF640AA6965 /* Pods_Wilcox_HackathonTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +50,7 @@
 		0E1B4D701ECE7CF640AA6965 /* Pods_Wilcox_HackathonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wilcox_HackathonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1183BE9C2622376000F1209F /* MessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
 		1183BEA12622392800F1209F /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		1183BEA9262246CE00F1209F /* CreateNewGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewGroupView.swift; sourceTree = "<group>"; };
 		11FB8057262137480051404B /* Wilcox Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wilcox Hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FB805A262137480051404B /* Wilcox_HackathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wilcox_HackathonApp.swift; sourceTree = "<group>"; };
 		11FB805C262137480051404B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		11FB80FB262187FC0051404B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		11FB8100262188090051404B /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
 		239ED3F2C6A5F6EC4993E29A /* Pods-Wilcox HackathonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wilcox HackathonTests.debug.xcconfig"; path = "Target Support Files/Pods-Wilcox HackathonTests/Pods-Wilcox HackathonTests.debug.xcconfig"; sourceTree = "<group>"; };
-		42C56CD7262235B000B03FBF /* CreateGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupView.swift; sourceTree = "<group>"; };
 		4A118D154A1FEAFC6E3E2A1D /* Pods-Wilcox Hackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wilcox Hackathon.release.xcconfig"; path = "Target Support Files/Pods-Wilcox Hackathon/Pods-Wilcox Hackathon.release.xcconfig"; sourceTree = "<group>"; };
 		4FA1FE72AE698881BB43C1A7 /* Pods-Wilcox HackathonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wilcox HackathonTests.release.xcconfig"; path = "Target Support Files/Pods-Wilcox HackathonTests/Pods-Wilcox HackathonTests.release.xcconfig"; sourceTree = "<group>"; };
 		57298C1D2B7776BFDE046C94 /* Pods-Wilcox Hackathon-Wilcox HackathonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wilcox Hackathon-Wilcox HackathonUITests.debug.xcconfig"; path = "Target Support Files/Pods-Wilcox Hackathon-Wilcox HackathonUITests/Pods-Wilcox Hackathon-Wilcox HackathonUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +143,7 @@
 				11FB80FB262187FC0051404B /* ChatView.swift */,
 				1183BEA12622392800F1209F /* MessagesView.swift */,
 				11FB8100262188090051404B /* CallView.swift */,
+				1183BEA9262246CE00F1209F /* CreateNewGroupView.swift */,
 				11FB809F262141210051404B /* JoinGroupView.swift */,
 				1183BE9C2622376000F1209F /* MessagesViewModel.swift */,
 				11FB805E262137480051404B /* Assets.xcassets */,
@@ -449,6 +450,7 @@
 				11FB80FC262187FC0051404B /* ChatView.swift in Sources */,
 				1183BEA22622392800F1209F /* MessagesView.swift in Sources */,
 				11FB80A0262141210051404B /* JoinGroupView.swift in Sources */,
+				1183BEAA262246CE00F1209F /* CreateNewGroupView.swift in Sources */,
 				11FB8089262140A90051404B /* MainView.swift in Sources */,
 				11FB805B262137480051404B /* Wilcox_HackathonApp.swift in Sources */,
 			);

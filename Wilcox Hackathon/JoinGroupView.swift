@@ -52,7 +52,7 @@ struct JoinGroupView: View {
                 .cornerRadius(25)
                 .shadow(radius:3)
                 
-                NavigationLink(destination: CreateGroupView()) {
+                NavigationLink(destination: CreateNewGroupView()) {
                     Image(systemName: "plus.circle.fill").foregroundColor(Color.black)
                     Text("Create New Group").foregroundColor(Color.black).fontWeight(.heavy)
                 }
