@@ -8,27 +8,44 @@
 import SwiftUI
 
 struct FormView: View {
-    @State var classes: String = ""
+    
+    struct Tag: Hashable, Identifiable {
+        let name: String
+        let id = UUID()
+    }
+    
+    struct Question: Identifiable {
+        let name: String
+        let choices: [Tag]
+        let id = UUID()
+    }
+    
+    private let Questions: [Question] = [
+        Question(name: "Classes", choices: [Tag(name: "Chemistry"), Tag(name: "Physics"), Tag(name: "Biology"), Tag(name: "World History AP"), Tag(name: "US History AP"), Tag(name: "European History AP"), Tag(name: "AP Computer Science Principles"), Tag(name: "AP Computer Science A")]),
+        Question(name: "Grades", choices: [Tag(name: "7th Grade"), Tag(name: "8th Grade"), Tag(name: "9th Grade"), Tag(name: "10th Grade"), Tag(name: "11th Grade"), Tag(name: "12th Grade"), Tag(name: "College Freshman"), Tag(name: "College Sophomore"), Tag(name: "College Junior"), Tag(name: "College Senior"), Tag(name: "Other")]),
+        Question(name: "Schools", choices: [Tag(name: "Pinewood"), Tag(name: "Los Altos High School"), Tag(name: "Montain View High School")])
+    ]
+    
+    @State private var multiSelection = Set<UUID>()
+    
     var body: some View {
-        question(label: "Classes", placeholder: "What classes are you taking")
+        NavigationView {
+            List(selection: $multiSelection){
+                ForEach(Questions) {question in
+                    Section(header: Text("\(question.name)")) {
+                        ForEach(question.choices) { tag in
+                            Text(tag.name)
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Options")
+            .toolbar { EditButton()}
+        }
+        Text("\(multiSelection.count) selections")
     }
 }
 
-struct question: View {
-    @State var label: String
-    @State var placeholder: String
-    @State var answer: String = ""
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text(label).font(.headline)
-            TextField(placeholder, text: $answer)
-                .padding(.all)
-                .cornerRadius(5)
-                .border(Color(UIColor.separator))
-        }
-        .padding(.horizontal, 15)
-    }
-}
 
 struct FormView_Previews: PreviewProvider {
     static var previews: some View {

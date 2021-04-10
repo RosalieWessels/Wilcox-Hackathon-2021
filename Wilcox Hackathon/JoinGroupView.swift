@@ -50,10 +50,19 @@ struct JoinGroupView: View {
                 .cornerRadius(25)
                 .shadow(radius:3)
                 
+                NavigationLink(destination: CreateGroupView()) {
+                    Image(systemName: "plus.circle.fill").foregroundColor(Color.black)
+                    Text("Create New Group").foregroundColor(Color.black).fontWeight(.heavy)
+                }
+                .padding()
+                .background(Color.white)
+                .cornerRadius(25)
+                .shadow(radius:3)
+                
                 HStack{
                     NavigationLink(destination: FormView()) {
                         Image(systemName: "doc.badge.gearshape.fill").foregroundColor(Color.black)
-                        Text("Redo Your Recommendations").foregroundColor(Color.black)
+                        Text("Redo Your Recommendations").foregroundColor(Color.black).fontWeight(.heavy)
                     }
                 }
                 .padding()
@@ -72,6 +81,7 @@ struct JoinGroupView: View {
 
 struct SuggestedGroupBox: View {
     @State var groupName: String
+    @State private var showingAlert = false
     var body: some View {
         HStack {
             Text(groupName).fontWeight(.heavy)
@@ -83,9 +93,12 @@ struct SuggestedGroupBox: View {
             
             HStack {
                 // should this take the user to a different page or just show like an alert?
-                NavigationLink(destination: ContentView()) {
+                Button(action: {showingAlert = true}) {
                     Image(systemName: "magnifyingglass.circle.fill").foregroundColor(Color.black)
                     Text("info").foregroundColor(Color.black)
+                }
+                .alert(isPresented: $showingAlert) {
+                    Alert(title: Text("\(groupName) Info"), message: Text("the tags and maybe the members?"), dismissButton: .default(Text("Close")))
                 }
             }
         }

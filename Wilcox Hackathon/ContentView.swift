@@ -32,9 +32,17 @@ struct ContentView: View {
                 else {
                     ZStack {
                         
-                        Text("Welcome.")
-                            .font(Font.custom("ArialRoundedMTBold", size: 40))
-                            .foregroundColor(.white)
+                        VStack {
+                            Text("Welcome to")
+                                .font(.system(size: 35))
+                                .foregroundColor(.white)
+                                .shadow(radius:3)
+                            Text("Class Chats")
+                                .font(.system(size: 50))
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                .foregroundColor(.white)
+                                .shadow(radius:3)
+                        }
                         
                         VStack {
                             Spacer()
@@ -51,7 +59,7 @@ struct ContentView: View {
                         }
                         
                     }
-                    .background(Image("wallpaper"))
+                    .background(Image("studyBackground"))
                     .navigationBarHidden(true)
                 }
             }
