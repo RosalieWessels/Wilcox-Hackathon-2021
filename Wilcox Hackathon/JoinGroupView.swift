@@ -14,9 +14,9 @@ struct JoinGroupView: View {
     var body: some View {
         ZStack {
             
-            Image("studyBackground") // photo credit: https://www.lsprints.co.uk/ekmps/shops/lsprints/images/stock-designs-polka-dots-baby-blue-white-38270-p.jpg
+            Image("background8").resizable().aspectRatio(contentMode: .fill).ignoresSafeArea()
             
-            VStack(alignment:.leading) {
+            VStack {
                 
                 Spacer()
                 
@@ -73,6 +73,7 @@ struct JoinGroupView: View {
                 Spacer()
             }
         }
+        .accentColor(.black)
     }
     func joinGroup() {
         print("add group into groups in firebase") // this function uses the name. a different one will use a code? maybe? this is that different one? 

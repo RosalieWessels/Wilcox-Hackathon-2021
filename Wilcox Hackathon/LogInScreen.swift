@@ -18,6 +18,7 @@ struct FullLoginView : View {
     var body: some View {
         
         ZStack {
+            
             if status == true {
                 
 //                VStack {
@@ -33,7 +34,9 @@ struct FullLoginView : View {
             else {
                 LogInScreen(model: model)
             }
-        }.onAppear(perform: {
+        }
+        .background(Image("background8").resizable().aspectRatio(contentMode: .fill).ignoresSafeArea())
+        .onAppear(perform: {
             checkStatus()
         })
         
@@ -55,8 +58,10 @@ struct LogInScreen: View {
             VStack {
                 
                 Text("Log In")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
+                    .font(.system(size: 50))
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.white)
+                    .shadow(radius:3)
                 
                 Spacer()
                 
@@ -64,42 +69,64 @@ struct LogInScreen: View {
                     Text("School Email")
                         .font(.title2)
                         .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .shadow(radius:3)
                     
                     TextField("School Email...", text: $model.email)
                         .padding(.vertical)
+                        .padding(.horizontal)
+                        .background(Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 0.5))
+                        .cornerRadius(5.0)
+                        .shadow(radius:3)
                     
                     Text("Password")
                         .font(.title2)
                         .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .shadow(radius:3)
                     
                     SecureField("Password...", text: $model.password)
                         .padding(.vertical)
+                        .padding(.horizontal)
+                        .background(Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 0.5))
+                        .cornerRadius(5.0)
+                        .shadow(radius:3)
                 }
                 .padding(.horizontal)
                 
                 HStack(spacing: 20) {
                     Text("Don't have an account yet?")
                         .font(.subheadline)
+                        .foregroundColor(.white)
+                        .shadow(radius:3)
                     
                     Button(action: {model.isSignUp.toggle()}) {
                         Text("Sign Up Now")
                             .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .shadow(radius:3)
                     }
                 }
                 
                 Button(action: model.resetPassword) {
                     Text("Forgot password?")
+                        .foregroundColor(.white)
+                        .shadow(radius: 3)
                 }
                 
                 Spacer()
                 
                 Button(action: model.login) {
                     Text("Submit")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
+                        .font(Font.custom("ArialRoundedMTBold", size: 25))
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.white)
+                        .cornerRadius(25)
+                        .shadow(radius:3)
                 }
                 .padding()
-                .background(Color("DarkGray"))
-                .cornerRadius(20)
 
                 
             }

@@ -14,11 +14,14 @@ struct SignUpScreen: View {
     
     var body: some View {
         ZStack {
+            
             VStack {
                 
                 Text("Sign Up")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
+                    .font(.system(size: 50))
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.white)
+                    .shadow(radius:3)
                 
                 Spacer()
                 
@@ -26,23 +29,41 @@ struct SignUpScreen: View {
                     Text("School Email")
                         .font(.title2)
                         .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .shadow(radius:3)
                     
                     TextField("School Email...", text: $model.email_SignUp)
                         .padding(.vertical)
+                        .padding(.horizontal)
+                        .background(Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 0.5))
+                        .cornerRadius(5.0)
+                        .shadow(radius:3)
                     
                     Text("Password")
                         .font(.title2)
                         .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .shadow(radius:3)
                     
                     SecureField("Password...", text: $model.password_SignUp)
                         .padding(.vertical)
+                        .padding(.horizontal)
+                        .background(Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 0.5))
+                        .cornerRadius(5.0)
+                        .shadow(radius:3)
                     
                     Text("Re-enter Password")
                         .font(.title2)
                         .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .shadow(radius:3)
                     
                     SecureField("Re-enter Password...", text: $model.reEnterPassword)
                         .padding(.vertical)
+                        .padding(.horizontal)
+                        .background(Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 0.5))
+                        .cornerRadius(5.0)
+                        .shadow(radius:3)
                 }
                 .padding(.horizontal)
                 
@@ -50,11 +71,16 @@ struct SignUpScreen: View {
                 
                 Button(action: model.signUp) {
                     Text("Submit")
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
+                        .font(Font.custom("ArialRoundedMTBold", size: 25))
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.white)
+                        .cornerRadius(25)
+                        .shadow(radius:3)
                 }
                 .padding()
-                .background(Color("DarkGray"))
-                .cornerRadius(20)
+                
                 
             }
             
@@ -77,6 +103,7 @@ struct SignUpScreen: View {
                 Spacer()
             }
         }
+        .background(Image("background8").resizable().aspectRatio(contentMode: .fill).ignoresSafeArea())
         .alert(isPresented: $model.alert, content: {
             Alert(title: Text("Message"), message: Text(model.alertMsg), dismissButton: .destructive(Text("Ok"), action: {
                 
