@@ -9,7 +9,13 @@ import SwiftUI
 import Firebase
 
 struct MainView: View {
+    @State var db = Firestore.firestore()
     @StateObject var model = ModelData()
+    
+    @State var myClasses = []
+    @State var myDocIDs = []
+    @State var dict = [String: String]()
+    
     var body: some View {
         ZStack {
             
@@ -45,12 +51,23 @@ struct MainView: View {
                         .fontWeight(.heavy)
                         .padding(5)
                     
-                    GroupBox(groupName: "Chemistry")
-                        .padding()
-                    GroupBox(groupName: "AP World History")
-                        .padding()
-                    GroupBox(groupName: "AP CSP")
-                        .padding()
+                    VStack {
+                        if myClasses.count != 0 {
+                            ForEach(0..<myClasses.count) { index in
+                                GroupBox(groupName: myClasses[index] as! String)
+                                    .padding()
+                                
+                            }
+                        }
+                        
+                    }
+                    
+//                    GroupBox(groupName: "Chemistry")
+//                        .padding()
+//                    GroupBox(groupName: "AP World History")
+//                        .padding()
+//                    GroupBox(groupName: "AP CSP")
+//                        .padding()
                 }
                 .background(Color.white)
                 .cornerRadius(25)
@@ -74,8 +91,37 @@ struct MainView: View {
                 Spacer()
             }
             
-        }
+        }.onAppear(perform: {
+            myGroups()
+        })
     }
+    
+    func myGroups() {
+        db.collection("groups").whereField("members", arrayContains: "\(Auth.auth().currentUser?.email ?? "")")
+            .getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                        print("\(document.documentID) => \(document.data())")
+                        if let name = document.get("name") as? String {
+                            print("YOU ARE IN \(name)")
+                            if document == document {
+                                let documentid = String(document.documentID)
+                                myClasses.append(name)
+                                myDocIDs.append(documentid)
+                                dict[documentid] = name
+                            }
+                        }
+                        
+                    }
+                    print(myClasses)
+                    print(myDocIDs)
+                }
+        }
+        
+    }
+    
 }
 
 struct GroupBox: View {
@@ -85,14 +131,14 @@ struct GroupBox: View {
             Text(groupName).fontWeight(.heavy)
             
             HStack {
-                NavigationLink(destination: ContentView()) {
+                NavigationLink(destination: ChatView()) {
                     Image(systemName: "bubble.right.fill").foregroundColor(Color.black)
                     Text("chat").foregroundColor(Color.black)
                 }
             }
             
             HStack {
-                NavigationLink(destination: ContentView()) {
+                NavigationLink(destination: CallView()) {
                     Image(systemName: "phone.fill").foregroundColor(Color.black)
                     Text("call").foregroundColor(Color.black)
                 }
