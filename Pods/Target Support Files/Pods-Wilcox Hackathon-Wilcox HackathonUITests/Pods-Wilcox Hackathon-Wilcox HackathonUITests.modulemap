@@ -1,0 +1,6 @@
+framework module Pods_Wilcox_Hackathon_Wilcox_HackathonUITests {
+  umbrella header "Pods-Wilcox Hackathon-Wilcox HackathonUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

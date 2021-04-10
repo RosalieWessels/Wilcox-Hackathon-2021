@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D945E177467A32821B103DC /* Pods_Wilcox_Hackathon_Wilcox_HackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8CD3DEC3A595EC5038E7343 /* Pods_Wilcox_Hackathon_Wilcox_HackathonUITests.framework */; };
 		11FB805B262137480051404B /* Wilcox_HackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB805A262137480051404B /* Wilcox_HackathonApp.swift */; };
 		11FB805D262137480051404B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB805C262137480051404B /* ContentView.swift */; };
 		11FB805F262137480051404B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FB805E262137480051404B /* Assets.xcassets */; };
@@ -18,6 +19,9 @@
 		11FB8093262140E50051404B /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB8092262140E50051404B /* SignUpScreen.swift */; };
 		11FB80982621410A0051404B /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB80972621410A0051404B /* FormView.swift */; };
 		11FB80A0262141210051404B /* JoinGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB809F262141210051404B /* JoinGroupView.swift */; };
+		11FB80A52621425D0051404B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11FB80A42621425D0051404B /* GoogleService-Info.plist */; };
+		295E7174DCD8A888B15A1E12 /* Pods_Wilcox_Hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E149E5D030BD68B51A484572 /* Pods_Wilcox_Hackathon.framework */; };
+		A2025B2F086B176C7C261297 /* Pods_Wilcox_HackathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1B4D701ECE7CF640AA6965 /* Pods_Wilcox_HackathonTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E1B4D701ECE7CF640AA6965 /* Pods_Wilcox_HackathonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wilcox_HackathonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FB8057262137480051404B /* Wilcox Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wilcox Hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FB805A262137480051404B /* Wilcox_HackathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wilcox_HackathonApp.swift; sourceTree = "<group>"; };
 		11FB805C262137480051404B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +60,15 @@
 		11FB8092262140E50051404B /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		11FB80972621410A0051404B /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		11FB809F262141210051404B /* JoinGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGroupView.swift; sourceTree = "<group>"; };
+		11FB80A42621425D0051404B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		239ED3F2C6A5F6EC4993E29A /* Pods-Wilcox HackathonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wilcox HackathonTests.debug.xcconfig"; path = "Target Support Files/Pods-Wilcox HackathonTests/Pods-Wilcox HackathonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A118D154A1FEAFC6E3E2A1D /* Pods-Wilcox Hackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wilcox Hackathon.release.xcconfig"; path = "Target Support Files/Pods-Wilcox Hackathon/Pods-Wilcox Hackathon.release.xcconfig"; sourceTree = "<group>"; };
+		4FA1FE72AE698881BB43C1A7 /* Pods-Wilcox HackathonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wilcox HackathonTests.release.xcconfig"; path = "Target Support Files/Pods-Wilcox HackathonTests/Pods-Wilcox HackathonTests.release.xcconfig"; sourceTree = "<group>"; };
+		57298C1D2B7776BFDE046C94 /* Pods-Wilcox Hackathon-Wilcox HackathonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wilcox Hackathon-Wilcox HackathonUITests.debug.xcconfig"; path = "Target Support Files/Pods-Wilcox Hackathon-Wilcox HackathonUITests/Pods-Wilcox Hackathon-Wilcox HackathonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		717345567189FC6C8D3605F7 /* Pods-Wilcox Hackathon-Wilcox HackathonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wilcox Hackathon-Wilcox HackathonUITests.release.xcconfig"; path = "Target Support Files/Pods-Wilcox Hackathon-Wilcox HackathonUITests/Pods-Wilcox Hackathon-Wilcox HackathonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7FD6DB379A2A6D5825530775 /* Pods-Wilcox Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wilcox Hackathon.debug.xcconfig"; path = "Target Support Files/Pods-Wilcox Hackathon/Pods-Wilcox Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
+		A8CD3DEC3A595EC5038E7343 /* Pods_Wilcox_Hackathon_Wilcox_HackathonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wilcox_Hackathon_Wilcox_HackathonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E149E5D030BD68B51A484572 /* Pods_Wilcox_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wilcox_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				295E7174DCD8A888B15A1E12 /* Pods_Wilcox_Hackathon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2025B2F086B176C7C261297 /* Pods_Wilcox_HackathonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D945E177467A32821B103DC /* Pods_Wilcox_Hackathon_Wilcox_HackathonUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +106,8 @@
 				11FB806B262137490051404B /* Wilcox HackathonTests */,
 				11FB8076262137490051404B /* Wilcox HackathonUITests */,
 				11FB8058262137480051404B /* Products */,
+				E728AA32F0F05E07432C7C38 /* Pods */,
+				EC83D00A5C3B5EBC9BBD7A21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +133,7 @@
 				11FB809F262141210051404B /* JoinGroupView.swift */,
 				11FB805E262137480051404B /* Assets.xcassets */,
 				11FB8063262137480051404B /* Info.plist */,
+				11FB80A42621425D0051404B /* GoogleService-Info.plist */,
 				11FB8060262137480051404B /* Preview Content */,
 			);
 			path = "Wilcox Hackathon";
@@ -145,6 +165,30 @@
 			path = "Wilcox HackathonUITests";
 			sourceTree = "<group>";
 		};
+		E728AA32F0F05E07432C7C38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FD6DB379A2A6D5825530775 /* Pods-Wilcox Hackathon.debug.xcconfig */,
+				4A118D154A1FEAFC6E3E2A1D /* Pods-Wilcox Hackathon.release.xcconfig */,
+				57298C1D2B7776BFDE046C94 /* Pods-Wilcox Hackathon-Wilcox HackathonUITests.debug.xcconfig */,
+				717345567189FC6C8D3605F7 /* Pods-Wilcox Hackathon-Wilcox HackathonUITests.release.xcconfig */,
+				239ED3F2C6A5F6EC4993E29A /* Pods-Wilcox HackathonTests.debug.xcconfig */,
+				4FA1FE72AE698881BB43C1A7 /* Pods-Wilcox HackathonTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC83D00A5C3B5EBC9BBD7A21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E149E5D030BD68B51A484572 /* Pods_Wilcox_Hackathon.framework */,
+				A8CD3DEC3A595EC5038E7343 /* Pods_Wilcox_Hackathon_Wilcox_HackathonUITests.framework */,
+				0E1B4D701ECE7CF640AA6965 /* Pods_Wilcox_HackathonTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11FB807C262137490051404B /* Build configuration list for PBXNativeTarget "Wilcox Hackathon" */;
 			buildPhases = (
+				24CDFF4D0B34272A64519F24 /* [CP] Check Pods Manifest.lock */,
 				11FB8053262137480051404B /* Sources */,
 				11FB8054262137480051404B /* Frameworks */,
 				11FB8055262137480051404B /* Resources */,
+				5668AAD955D171A935FBECA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11FB807F262137490051404B /* Build configuration list for PBXNativeTarget "Wilcox HackathonTests" */;
 			buildPhases = (
+				284E63D81676BACBD4D5D1C1 /* [CP] Check Pods Manifest.lock */,
 				11FB8064262137490051404B /* Sources */,
 				11FB8065262137490051404B /* Frameworks */,
 				11FB8066262137490051404B /* Resources */,
@@ -187,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11FB8082262137490051404B /* Build configuration list for PBXNativeTarget "Wilcox HackathonUITests" */;
 			buildPhases = (
+				95C632C8FECDE2B3C7E49FED /* [CP] Check Pods Manifest.lock */,
 				11FB806F262137490051404B /* Sources */,
 				11FB8070262137490051404B /* Frameworks */,
 				11FB8071262137490051404B /* Resources */,
+				8A9BF832A049346195F158C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +299,7 @@
 			files = (
 				11FB8062262137480051404B /* Preview Assets.xcassets in Resources */,
 				11FB805F262137480051404B /* Assets.xcassets in Resources */,
+				11FB80A52621425D0051404B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +318,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24CDFF4D0B34272A64519F24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wilcox Hackathon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		284E63D81676BACBD4D5D1C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wilcox HackathonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5668AAD955D171A935FBECA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wilcox Hackathon/Pods-Wilcox Hackathon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wilcox Hackathon/Pods-Wilcox Hackathon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wilcox Hackathon/Pods-Wilcox Hackathon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A9BF832A049346195F158C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wilcox Hackathon-Wilcox HackathonUITests/Pods-Wilcox Hackathon-Wilcox HackathonUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wilcox Hackathon-Wilcox HackathonUITests/Pods-Wilcox Hackathon-Wilcox HackathonUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wilcox Hackathon-Wilcox HackathonUITests/Pods-Wilcox Hackathon-Wilcox HackathonUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95C632C8FECDE2B3C7E49FED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wilcox Hackathon-Wilcox HackathonUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11FB8053262137480051404B /* Sources */ = {
@@ -434,6 +587,7 @@
 		};
 		11FB807D262137490051404B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD6DB379A2A6D5825530775 /* Pods-Wilcox Hackathon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +609,7 @@
 		};
 		11FB807E262137490051404B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A118D154A1FEAFC6E3E2A1D /* Pods-Wilcox Hackathon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -476,6 +631,7 @@
 		};
 		11FB8080262137490051404B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 239ED3F2C6A5F6EC4993E29A /* Pods-Wilcox HackathonTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +653,7 @@
 		};
 		11FB8081262137490051404B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA1FE72AE698881BB43C1A7 /* Pods-Wilcox HackathonTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +675,7 @@
 		};
 		11FB8083262137490051404B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57298C1D2B7776BFDE046C94 /* Pods-Wilcox Hackathon-Wilcox HackathonUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +695,7 @@
 		};
 		11FB8084262137490051404B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 717345567189FC6C8D3605F7 /* Pods-Wilcox Hackathon-Wilcox HackathonUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
