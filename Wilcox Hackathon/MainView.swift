@@ -42,7 +42,7 @@ struct MainView: View {
                         .font(.system(size: 35))
                         .foregroundColor(.white)
                         .shadow(radius:3)
-                    Text("Class Chats")
+                    Text("StudyChats")
                         .font(.system(size: 50))
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.white)
