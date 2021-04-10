@@ -58,21 +58,6 @@ struct ContentView: View {
             
         }
     }
-    
-    //GET RID OF
-    func pushTestData() {
-        db.collection("cities").document("LA").setData([
-            "name": "Los Angeles",
-            "state": "CA",
-            "country": "USA"
-        ]) { err in
-            if let err = err {
-                print("Error writing document: \(err)")
-            } else {
-                print("Document successfully written!")
-            }
-        }
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
