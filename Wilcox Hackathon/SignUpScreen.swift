@@ -70,14 +70,16 @@ struct SignUpScreen: View {
                 Spacer()
                 
                 Button(action: model.signUp) {
-                    Text("Submit")
-                        .foregroundColor(.black)
-                        .font(Font.custom("ArialRoundedMTBold", size: 25))
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.white)
-                        .cornerRadius(25)
-                        .shadow(radius:3)
+                    NavigationLink(destination: FormView()) {
+                        Text("Submit")
+                            .foregroundColor(.black)
+                            .font(Font.custom("ArialRoundedMTBold", size: 25))
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.white)
+                            .cornerRadius(25)
+                            .shadow(radius:3)
+                    }
                 }
                 .padding()
                 
