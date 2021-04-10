@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject var model = ModelData()
     var body: some View {
         ZStack {
             
@@ -15,7 +16,14 @@ struct MainView: View {
             
             
             VStack {
+                
+                
+                
                 Spacer()
+                
+                Button(action: model.logOut) {
+                    Text("Log out")
+                }
                 
                 VStack {
                     Text("Welcome to")

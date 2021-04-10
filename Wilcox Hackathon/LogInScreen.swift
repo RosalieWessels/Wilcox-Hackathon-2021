@@ -20,14 +20,15 @@ struct FullLoginView : View {
         ZStack {
             if status == true {
                 
-                VStack {
-                    Text("Logged in as \(Auth.auth().currentUser?.email ?? "")")
-                    
-                    
-                    Button(action: model.logOut) {
-                        Text("Log out")
-                    }
-                }
+//                VStack {
+//                    Text("Logged in as \(Auth.auth().currentUser?.email ?? "")")
+//
+//
+//                    Button(action: model.logOut) {
+//                        Text("Log out")
+//                    }
+//                }
+                MainView()
             }
             else {
                 LogInScreen(model: model)
