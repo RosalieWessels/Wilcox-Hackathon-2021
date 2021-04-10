@@ -26,7 +26,7 @@ struct MainView: View {
     var body: some View {
         ZStack {
             
-            Image("studyBackground").navigationBarHidden(true) // photo credit: https://www.lsprints.co.uk/ekmps/shops/lsprints/images/stock-designs-polka-dots-baby-blue-white-38270-p.jpg
+            Image("background8").resizable().aspectRatio(contentMode: .fill).ignoresSafeArea()
             
             
             VStack {
@@ -34,10 +34,6 @@ struct MainView: View {
                 
                 
                 Spacer()
-                
-                Button(action: model.logOut) {
-                    Text("Log out")
-                }
                 
                 VStack {
                     Text("Welcome to")
@@ -92,6 +88,18 @@ struct MainView: View {
                 .frame(maxWidth: UIScreen.main.bounds.size.width - 60)
                 
                 Spacer()
+                
+                Button(action: model.logOut) {
+                    Text("Log out")
+                        .foregroundColor(.black)
+                        .fontWeight(.heavy)
+                }
+                .padding()
+                .background(Color.white)
+                .cornerRadius(25)
+                .shadow(radius:3)
+
+                
             }
             
         }.onAppear(perform: {

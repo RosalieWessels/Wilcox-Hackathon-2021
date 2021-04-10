@@ -51,7 +51,7 @@ struct ContentView: View {
                         }
                         
                     }
-                    .background(Image("studyBackground"))
+                    .background(Image("background8").resizable().aspectRatio(contentMode: .fill).ignoresSafeArea())
                     .navigationBarHidden(true)
                 }
             }
@@ -70,11 +70,12 @@ struct LogInOrSignUpText: View {
     @State var text : String
     var body: some View {
         Text(text)
-        .foregroundColor(.white)
-        .font(Font.custom("ArialRoundedMTBold", size: 25))
-        .padding()
-        .frame(maxWidth: .infinity)
-        .background(Color("DarkGray").opacity(0.8))
-        .cornerRadius(20)
+            .foregroundColor(.black)
+            .font(Font.custom("ArialRoundedMTBold", size: 25))
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(Color.white)
+            .cornerRadius(25)
+            .shadow(radius:3)
     }
 }

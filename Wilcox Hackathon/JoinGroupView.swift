@@ -24,9 +24,9 @@ struct JoinGroupView: View {
     var body: some View {
         ZStack {
             
-            Image("studyBackground") // photo credit: https://www.lsprints.co.uk/ekmps/shops/lsprints/images/stock-designs-polka-dots-baby-blue-white-38270-p.jpg
+            Image("background8").resizable().aspectRatio(contentMode: .fill).ignoresSafeArea()
             
-            VStack(alignment:.leading) {
+            VStack {
                 
                 Spacer()
                 
@@ -90,6 +90,7 @@ struct JoinGroupView: View {
                 ))
             })
         }
+        .accentColor(.black)
     }
     
     func joinGroup() {

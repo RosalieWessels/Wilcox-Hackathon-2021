@@ -46,6 +46,9 @@ struct CreateGroupView: View {
                 .navigationTitle("Group Tags")
                 .toolbar { EditButton()}
             }
+            .background(Color.white)
+            .cornerRadius(25)
+            .shadow(radius:3)
             
             Button(action: {}) {
                 HStack {
@@ -61,6 +64,8 @@ struct CreateGroupView: View {
             .cornerRadius(4)
             .padding(.horizontal, 50)
         }
+        .padding(.horizontal)
+        .background(Image("background8").resizable().aspectRatio(contentMode: .fill).ignoresSafeArea())
     }
     
     func createGroup() {
