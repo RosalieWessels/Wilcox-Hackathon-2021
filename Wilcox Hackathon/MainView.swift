@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct MainView: View {
     @StateObject var model = ModelData()
@@ -59,7 +60,7 @@ struct MainView: View {
                 
                 HStack {
                     Image(systemName: "person.fill").foregroundColor(Color.black).padding(.leading)
-                    Text("dabomb.com.yourmom").multilineTextAlignment(.leading).foregroundColor(Color.black)
+                    Text("\(Auth.auth().currentUser?.email ?? "")").multilineTextAlignment(.leading).foregroundColor(Color.black)
                     NavigationLink(destination: JoinGroupView()) {
                         Image(systemName: "plus.circle.fill").foregroundColor(Color.black)
                         Text("find group").foregroundColor(Color.black)
