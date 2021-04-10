@@ -13,6 +13,11 @@
 		11FB8062262137480051404B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FB8061262137480051404B /* Preview Assets.xcassets */; };
 		11FB806D262137490051404B /* Wilcox_HackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB806C262137490051404B /* Wilcox_HackathonTests.swift */; };
 		11FB8078262137490051404B /* Wilcox_HackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB8077262137490051404B /* Wilcox_HackathonUITests.swift */; };
+		11FB8089262140A90051404B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB8088262140A90051404B /* MainView.swift */; };
+		11FB808E262140DC0051404B /* LogInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB808D262140DC0051404B /* LogInScreen.swift */; };
+		11FB8093262140E50051404B /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB8092262140E50051404B /* SignUpScreen.swift */; };
+		11FB80982621410A0051404B /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB80972621410A0051404B /* FormView.swift */; };
+		11FB80A0262141210051404B /* JoinGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB809F262141210051404B /* JoinGroupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		11FB8073262137490051404B /* Wilcox HackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wilcox HackathonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FB8077262137490051404B /* Wilcox_HackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wilcox_HackathonUITests.swift; sourceTree = "<group>"; };
 		11FB8079262137490051404B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11FB8088262140A90051404B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		11FB808D262140DC0051404B /* LogInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInScreen.swift; sourceTree = "<group>"; };
+		11FB8092262140E50051404B /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		11FB80972621410A0051404B /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		11FB809F262141210051404B /* JoinGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,11 @@
 			children = (
 				11FB805A262137480051404B /* Wilcox_HackathonApp.swift */,
 				11FB805C262137480051404B /* ContentView.swift */,
+				11FB808D262140DC0051404B /* LogInScreen.swift */,
+				11FB8092262140E50051404B /* SignUpScreen.swift */,
+				11FB80972621410A0051404B /* FormView.swift */,
+				11FB8088262140A90051404B /* MainView.swift */,
+				11FB809F262141210051404B /* JoinGroupView.swift */,
 				11FB805E262137480051404B /* Assets.xcassets */,
 				11FB8063262137480051404B /* Info.plist */,
 				11FB8060262137480051404B /* Preview Content */,
@@ -259,7 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FB80982621410A0051404B /* FormView.swift in Sources */,
+				11FB8093262140E50051404B /* SignUpScreen.swift in Sources */,
 				11FB805D262137480051404B /* ContentView.swift in Sources */,
+				11FB808E262140DC0051404B /* LogInScreen.swift in Sources */,
+				11FB80A0262141210051404B /* JoinGroupView.swift in Sources */,
+				11FB8089262140A90051404B /* MainView.swift in Sources */,
 				11FB805B262137480051404B /* Wilcox_HackathonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
