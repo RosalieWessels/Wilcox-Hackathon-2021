@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11FB805B262137480051404B /* Wilcox_HackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB805A262137480051404B /* Wilcox_HackathonApp.swift */; };
+		11FB805D262137480051404B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB805C262137480051404B /* ContentView.swift */; };
+		11FB805F262137480051404B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FB805E262137480051404B /* Assets.xcassets */; };
+		11FB8062262137480051404B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FB8061262137480051404B /* Preview Assets.xcassets */; };
+		11FB806D262137490051404B /* Wilcox_HackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB806C262137490051404B /* Wilcox_HackathonTests.swift */; };
+		11FB8078262137490051404B /* Wilcox_HackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB8077262137490051404B /* Wilcox_HackathonUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11FB8069262137490051404B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11FB804F262137480051404B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11FB8056262137480051404B;
+			remoteInfo = "Wilcox Hackathon";
+		};
+		11FB8074262137490051404B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11FB804F262137480051404B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11FB8056262137480051404B;
+			remoteInfo = "Wilcox Hackathon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11FB8057262137480051404B /* Wilcox Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wilcox Hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11FB805A262137480051404B /* Wilcox_HackathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wilcox_HackathonApp.swift; sourceTree = "<group>"; };
+		11FB805C262137480051404B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		11FB805E262137480051404B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11FB8061262137480051404B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		11FB8063262137480051404B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11FB8068262137490051404B /* Wilcox HackathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wilcox HackathonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11FB806C262137490051404B /* Wilcox_HackathonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wilcox_HackathonTests.swift; sourceTree = "<group>"; };
+		11FB806E262137490051404B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11FB8073262137490051404B /* Wilcox HackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wilcox HackathonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11FB8077262137490051404B /* Wilcox_HackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wilcox_HackathonUITests.swift; sourceTree = "<group>"; };
+		11FB8079262137490051404B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11FB8054262137480051404B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11FB8065262137490051404B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11FB8070262137490051404B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11FB804E262137480051404B = {
+			isa = PBXGroup;
+			children = (
+				11FB8059262137480051404B /* Wilcox Hackathon */,
+				11FB806B262137490051404B /* Wilcox HackathonTests */,
+				11FB8076262137490051404B /* Wilcox HackathonUITests */,
+				11FB8058262137480051404B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11FB8058262137480051404B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11FB8057262137480051404B /* Wilcox Hackathon.app */,
+				11FB8068262137490051404B /* Wilcox HackathonTests.xctest */,
+				11FB8073262137490051404B /* Wilcox HackathonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11FB8059262137480051404B /* Wilcox Hackathon */ = {
+			isa = PBXGroup;
+			children = (
+				11FB805A262137480051404B /* Wilcox_HackathonApp.swift */,
+				11FB805C262137480051404B /* ContentView.swift */,
+				11FB805E262137480051404B /* Assets.xcassets */,
+				11FB8063262137480051404B /* Info.plist */,
+				11FB8060262137480051404B /* Preview Content */,
+			);
+			path = "Wilcox Hackathon";
+			sourceTree = "<group>";
+		};
+		11FB8060262137480051404B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				11FB8061262137480051404B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		11FB806B262137490051404B /* Wilcox HackathonTests */ = {
+			isa = PBXGroup;
+			children = (
+				11FB806C262137490051404B /* Wilcox_HackathonTests.swift */,
+				11FB806E262137490051404B /* Info.plist */,
+			);
+			path = "Wilcox HackathonTests";
+			sourceTree = "<group>";
+		};
+		11FB8076262137490051404B /* Wilcox HackathonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11FB8077262137490051404B /* Wilcox_HackathonUITests.swift */,
+				11FB8079262137490051404B /* Info.plist */,
+			);
+			path = "Wilcox HackathonUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11FB8056262137480051404B /* Wilcox Hackathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11FB807C262137490051404B /* Build configuration list for PBXNativeTarget "Wilcox Hackathon" */;
+			buildPhases = (
+				11FB8053262137480051404B /* Sources */,
+				11FB8054262137480051404B /* Frameworks */,
+				11FB8055262137480051404B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wilcox Hackathon";
+			productName = "Wilcox Hackathon";
+			productReference = 11FB8057262137480051404B /* Wilcox Hackathon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11FB8067262137490051404B /* Wilcox HackathonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11FB807F262137490051404B /* Build configuration list for PBXNativeTarget "Wilcox HackathonTests" */;
+			buildPhases = (
+				11FB8064262137490051404B /* Sources */,
+				11FB8065262137490051404B /* Frameworks */,
+				11FB8066262137490051404B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11FB806A262137490051404B /* PBXTargetDependency */,
+			);
+			name = "Wilcox HackathonTests";
+			productName = "Wilcox HackathonTests";
+			productReference = 11FB8068262137490051404B /* Wilcox HackathonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11FB8072262137490051404B /* Wilcox HackathonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11FB8082262137490051404B /* Build configuration list for PBXNativeTarget "Wilcox HackathonUITests" */;
+			buildPhases = (
+				11FB806F262137490051404B /* Sources */,
+				11FB8070262137490051404B /* Frameworks */,
+				11FB8071262137490051404B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11FB8075262137490051404B /* PBXTargetDependency */,
+			);
+			name = "Wilcox HackathonUITests";
+			productName = "Wilcox HackathonUITests";
+			productReference = 11FB8073262137490051404B /* Wilcox HackathonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11FB804F262137480051404B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					11FB8056262137480051404B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					11FB8067262137490051404B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 11FB8056262137480051404B;
+					};
+					11FB8072262137490051404B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 11FB8056262137480051404B;
+					};
+				};
+			};
+			buildConfigurationList = 11FB8052262137480051404B /* Build configuration list for PBXProject "Wilcox Hackathon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11FB804E262137480051404B;
+			productRefGroup = 11FB8058262137480051404B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11FB8056262137480051404B /* Wilcox Hackathon */,
+				11FB8067262137490051404B /* Wilcox HackathonTests */,
+				11FB8072262137490051404B /* Wilcox HackathonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11FB8055262137480051404B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FB8062262137480051404B /* Preview Assets.xcassets in Resources */,
+				11FB805F262137480051404B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11FB8066262137490051404B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11FB8071262137490051404B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11FB8053262137480051404B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FB805D262137480051404B /* ContentView.swift in Sources */,
+				11FB805B262137480051404B /* Wilcox_HackathonApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11FB8064262137490051404B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FB806D262137490051404B /* Wilcox_HackathonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11FB806F262137490051404B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FB8078262137490051404B /* Wilcox_HackathonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11FB806A262137490051404B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11FB8056262137480051404B /* Wilcox Hackathon */;
+			targetProxy = 11FB8069262137490051404B /* PBXContainerItemProxy */;
+		};
+		11FB8075262137490051404B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11FB8056262137480051404B /* Wilcox Hackathon */;
+			targetProxy = 11FB8074262137490051404B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11FB807A262137490051404B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11FB807B262137490051404B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11FB807D262137490051404B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Wilcox Hackathon/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Wilcox Hackathon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RosalieWessels.Wilcox-Hackathon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11FB807E262137490051404B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Wilcox Hackathon/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Wilcox Hackathon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RosalieWessels.Wilcox-Hackathon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11FB8080262137490051404B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wilcox HackathonTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RosalieWessels.Wilcox-HackathonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wilcox Hackathon.app/Wilcox Hackathon";
+			};
+			name = Debug;
+		};
+		11FB8081262137490051404B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wilcox HackathonTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RosalieWessels.Wilcox-HackathonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wilcox Hackathon.app/Wilcox Hackathon";
+			};
+			name = Release;
+		};
+		11FB8083262137490051404B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wilcox HackathonUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RosalieWessels.Wilcox-HackathonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wilcox Hackathon";
+			};
+			name = Debug;
+		};
+		11FB8084262137490051404B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wilcox HackathonUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RosalieWessels.Wilcox-HackathonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wilcox Hackathon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11FB8052262137480051404B /* Build configuration list for PBXProject "Wilcox Hackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11FB807A262137490051404B /* Debug */,
+				11FB807B262137490051404B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11FB807C262137490051404B /* Build configuration list for PBXNativeTarget "Wilcox Hackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11FB807D262137490051404B /* Debug */,
+				11FB807E262137490051404B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11FB807F262137490051404B /* Build configuration list for PBXNativeTarget "Wilcox HackathonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11FB8080262137490051404B /* Debug */,
+				11FB8081262137490051404B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11FB8082262137490051404B /* Build configuration list for PBXNativeTarget "Wilcox HackathonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11FB8083262137490051404B /* Debug */,
+				11FB8084262137490051404B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11FB804F262137480051404B /* Project object */;
+}
