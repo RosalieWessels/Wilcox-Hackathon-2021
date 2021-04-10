@@ -10,6 +10,8 @@ import SwiftUI
 struct JoinGroupView: View {
     
     @State var groupCode: String = ""
+    @ObservedObject var viewModel = ChatroomsViewModel()
+    @Environment(\.presentationMode) var presentation
     
     var body: some View {
         ZStack {
@@ -50,7 +52,7 @@ struct JoinGroupView: View {
                 .cornerRadius(25)
                 .shadow(radius:3)
                 
-                NavigationLink(destination: CreateGroupView()) {
+                NavigationLink(destination: CreateNewGroupView()) {
                     Image(systemName: "plus.circle.fill").foregroundColor(Color.black)
                     Text("Create New Group").foregroundColor(Color.black).fontWeight(.heavy)
                 }
@@ -75,8 +77,11 @@ struct JoinGroupView: View {
         }
         .accentColor(.black)
     }
+    
     func joinGroup() {
-        print("add group into groups in firebase") // this function uses the name. a different one will use a code? maybe? this is that different one? 
+        viewModel.joinChatroom(code: groupCode, handler: {
+            self.presentation.wrappedValue.dismiss()
+        })
     }
 }
 
@@ -106,7 +111,7 @@ struct SuggestedGroupBox: View {
     }
     
     func joinGroup() {
-        print("add group into groups in firebase") // this function uses the name. a different one will use a code? maybe?
+        print("JOIN SUGGESTED GROUP _ NEEDS ADDED")
     }
 }
 

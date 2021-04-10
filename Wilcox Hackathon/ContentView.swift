@@ -18,14 +18,6 @@ struct ContentView: View {
         NavigationView {
             ZStack {
                 if status == true {
-//                    VStack {
-//                        Text("Logged in as \(Auth.auth().currentUser?.email ?? "")")
-//
-//
-//                        Button(action: model.logOut) {
-//                            Text("Log out")
-//                        }
-//                    }
                     MainView()
 
                 }
@@ -64,21 +56,6 @@ struct ContentView: View {
                 }
             }
             
-        }
-    }
-    
-    //GET RID OF
-    func pushTestData() {
-        db.collection("cities").document("LA").setData([
-            "name": "Los Angeles",
-            "state": "CA",
-            "country": "USA"
-        ]) { err in
-            if let err = err {
-                print("Error writing document: \(err)")
-            } else {
-                print("Document successfully written!")
-            }
         }
     }
 }

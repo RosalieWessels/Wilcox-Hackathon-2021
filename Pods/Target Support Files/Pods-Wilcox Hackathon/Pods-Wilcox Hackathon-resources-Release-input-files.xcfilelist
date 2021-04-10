@@ -1,0 +1,13 @@
+${PODS_ROOT}/Target Support Files/Pods-Wilcox Hackathon/Pods-Wilcox Hackathon-resources.sh
+${PODS_ROOT}/AgoraUIKit/AgoraUIKit/btn_endcall_normal.png
+${PODS_ROOT}/AgoraUIKit/AgoraUIKit/btn_endcall_pressed.png
+${PODS_ROOT}/AgoraUIKit/AgoraUIKit/btn_mute_normal.png
+${PODS_ROOT}/AgoraUIKit/AgoraUIKit/btn_mute_pressed.png
+${PODS_ROOT}/AgoraUIKit/AgoraUIKit/btn_startcall_normal.png
+${PODS_ROOT}/AgoraUIKit/AgoraUIKit/btn_startcall_pressed.png
+${PODS_ROOT}/AgoraUIKit/AgoraUIKit/btn_switch_camera_normal.png
+${PODS_ROOT}/AgoraUIKit/AgoraUIKit/btn_switch_camera_pressed.png
+${PODS_ROOT}/AgoraUIKit/AgoraUIKit/btn_unmute_normal.png
+${PODS_ROOT}/AgoraUIKit/AgoraUIKit/btn_unmute_pressed.png
+${BUILT_PRODUCTS_DIR}/AgoraUIKit/AgoraUIKit.framework/AgoraVideoViewController.storyboardc
+${BUILT_PRODUCTS_DIR}/AgoraUIKit/AgoraUIKit.framework/VideoControlView.nib
